@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20 assignment</title>
+  </head>
+  <body>
+    <b
+      >Q1. What are conditional statements? Explain conditional statements with
+      syntax and examples.</b
+    >
+    <p>
+      Conditional statements, also known as control structures, are fundamental
+      constructs in programming that allow you to execute different blocks of
+      code based on certain conditions. These conditions typically evaluate to
+      either true or false, and the program flow is determined by the result of
+      these evaluations.
+      <p>There are various types of conditional statements, but the most common ones are:
+
+        if statement: This statement allows you to execute a block of code if a specified condition is true.
+        Syntax: if condition:
+        # code block to execute if condition is true</p>
+        <p>if-else statement: This statement allows you to execute one block of code if the condition is true and another block of code if the condition is false.
+            Syntax:
+            if condition:
+            # code block to execute if condition is true
+        else:
+            # code block to execute if condition is false
+        </p>
+        <p>if-elif-else statement: This statement allows you to test multiple conditions and execute different blocks of code based on the first condition that evaluates to true. The elif stands for "else if".
+            Syntax:
+            
+            if condition1:
+    # code block to execute if condition1 is true
+elif condition2:
+    # code block to execute if condition2 is true
+else:
+    # code block to execute if all conditions are false</p>
+    These conditional statements allow you to control the flow of your program based on different conditions, making your code more flexible and powerful.
+    </p>
+    <b>Q2. Write a program that grades students based on their marks<br>
+    .If greater than 90 then A Grade<br>
+    .If between 70 and 90 then a B grade<br>
+    .If between 50 and 70 then a C grade<br>
+    .Below 50 then an F grade<br>
+</b>
+ <p>  . let marks = 90;
+    if(marks > 90){
+    return A;
+   }
+  
+   . let marks = 87;
+   if(marks < 70 , marks < 90){
+    return b;
+   }
+
+   . let marks = 87;
+   if(marks < 50 , marks < 70){
+    return c;
+   }
+
+   . let marks = 43
+    if (marks < 50){
+        return f;
+    }
+</p>
+<b>Q3. What are loops, and what do we need them? Explain different types of loops with their syntax and
+    examples.</b>
+<p>Loops are programming constructs that allow you to execute a block of code repeatedly based on a certain condition or for a specific number of times. They are essential for automating repetitive tasks and iterating over collections of data.<br>
+    There are mainly three types of loops in most programming languages:<br>
+    1. for loop: The for loop is used when you know in advance how many times you want to execute a block of code.<br>
+    Syntax:<br>
+for (initialization; condition; iteration) {
+    // code block to be executed
+}
+Example:
+
+javascript
+Copy code
+for (let i = 0; i < 5; i++) {
+    console.log("Iteration", i);
+}<br>
+while loop: The while loop is used when you want to execute a block of code as long as a condition is true.
+Syntax:<br>
+while (condition) {
+    // code block to be executed
+}
+Example:
+
+javascript
+Copy code
+let i = 0;
+while (i < 5) {
+    console.log("Iteration", i);
+    i++;
+}<br>
+do-while loop: The do-while loop is similar to the while loop, but it guarantees that the code block is executed at least once before checking the condition.
+Syntax:<br>
+do {
+    // code block to be executed
+} while (condition);
+Example:
+let i = 0;
+do {
+    console.log("Iteration", i);
+    i++;
+} while (i < 5);
+Each type of loop has its use cases:
+
+for loop: When you know the exact number of iterations required, typically when iterating over arrays or performing a fixed number of repetitive tasks.
+while loop: When the number of iterations is not known in advance, and you want to continue looping until a certain condition is met.
+do-while loop: When you want to execute the code block at least once before checking the condition, for situations where you need to ensure the block executes at least once regardless of the condition.
+</p>
+<b>Q4. Generate numbers between any 2 given numbers.</b>
+<p>o generate numbers between two given numbers, you can use a loop to iterate from the starting number to the ending number, and output each number in between. Here's a JavaScript code example to achieve this:</p>
+<p><pre>const num1 = 10;
+    const num2 = 25;
+    
+    if (num1 < num2) {
+        for (let i = num1 + 1; i < num2; i++) {
+            console.log(i);
+        }
+    } else if (num1 > num2) {
+        for (let i = num2 + 1; i < num1; i++) {
+            console.log(i);
+        }
+    } else {
+        console.log("The numbers are equal. There are no numbers in between.");
+    }</pre></p>
+    <b>Q5. Use the while loop to print n9mbers from 1 to 25 in ascending and descending order.</b>
+    <p>Certainly! Here's how you can achieve that using a while loop in JavaScript:</p>
+    <pre>// Ascending order
+        console.log("Ascending Order:");
+        let ascendingCounter = 1;
+        while (ascendingCounter <= 25) {
+            console.log(ascendingCounter);
+            ascendingCounter++;
+        }
+        
+        // Descending order
+        console.log("\nDescending Order:");
+        let descendingCounter = 25;
+        while (descendingCounter >= 1) {
+            console.log(descendingCounter);
+            descendingCounter--;
+        }</pre>
+</body>
+</html>
